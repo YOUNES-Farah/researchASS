@@ -2,23 +2,6 @@
 
 > A fast, free, production-ready RAG agent built with LangGraph, Groq, ChromaDB and Tavily.
 
----
-
-## ✨ Features
-
-- ⚡ **Zero-latency semantic cache** — identical/similar questions answered instantly
-- 🔀 **Smart routing** — keyword-based router (no LLM call) directs to ChromaDB or web search
-- 🧠 **Auto model selection** — `llama-3.1-8b-instant` for simple questions, `llama-3.3-70b` for complex ones
-- 📊 **Cross-encoder reranker** — reranks ChromaDB results by true relevance before generation
-- 🌐 **Tavily web search** — with automatic DuckDuckGo fallback
-- 🔁 **Automatic fallback** — if ChromaDB relevance score is too low, switches to web search
-- 🔄 **Retry on rate limit** — automatic retry with exponential backoff via Tenacity
-- 🌊 **SSE Streaming** — token-by-token streaming via Server-Sent Events
-- 📄 **Document ingestion** — supports plain text, PDF, and URLs
-- 🚀 **FastAPI** — REST API with auto-generated Swagger docs
-
----
-
 ## 🏗️ Architecture
 
 ```
